@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080808"><title>Fandemonium — Guess the Wrestler</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div><div class="brand">FANDEMONIUM</div><div class="sub">GUESS THE WRESTLER</div></div>
+  <div class="host-status" id="status">HOST MODE</div>
+</header>
+<main>
+  <section class="controls" aria-label="Host controls">
+    <button id="newGame" class="btn btn-red">NEW GAME</button>
+    <button id="setMystery" class="btn btn-gold">SET MYSTERY</button>
+    <button id="showAnswer" class="btn btn-dark">SHOW ANSWER</button>
+    <button id="standAll" class="btn btn-blue">STAND ALL UP</button>
+  </section>
+  <section class="hint" id="hint">Tap <b>SET MYSTERY</b>, then tap one wrestler. After that, tap tiles to knock them down.</section>
+  <section id="board" class="board" aria-label="Wrestler board"></section>
+</main>
+<div id="answerModal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-card"><button class="close" id="closeAnswer">×</button><div class="modal-kicker">THE MYSTERY WRESTLER IS</div><img id="answerImage" alt="Mystery wrestler"><h2 id="answerName"></h2></div>
+</div>
+<div id="winner" class="winner hidden"><div class="winner-inner"><div class="winner-small">YOU GOT IT!</div><div class="winner-big">WINNER!</div><div class="winner-name" id="winnerName"></div><button class="btn btn-dark winner-btn" id="winnerClose">KEEP PLAYING</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
