@@ -50,7 +50,13 @@ main{max-width:1200px;margin:auto;padding:7px 9px 18px}
 
 .btn:active{transform:translateY(2px);box-shadow:none}
 
-.btn-red{background:#d71920}.btn-gold{background:#e6ae00;color:#111}.btn-dark{background:#242424;border:1px solid #555}.btn-blue{background:#1769c2}
+.btn-red{background:#d71920}
+
+.btn-gold{background:#e6ae00;color:#111}
+
+.btn-dark{background:#242424;border:1px solid #555}
+
+.btn-blue{background:#1769c2}
 
 .modal,.winner{position:fixed;z-index:30;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.82);padding:18px}
 
